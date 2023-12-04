@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "a5Z4MvkWGKWfeq2zHoOaRsahMvD4GvwYpuv2EYKqutE=",
+  "Source": "webappi",
+  "BasePath": "_content/webappi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
