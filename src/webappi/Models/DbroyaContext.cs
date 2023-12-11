@@ -25,21 +25,14 @@ public partial class DbroyaContext : DbContext
     {
         modelBuilder.Entity<Person>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(e => e.Personid).HasName("PK__Persons__AA2CFFDD9D695E87");
 
-            entity.Property(e => e.Address)
-                .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.City)
-                .HasMaxLength(255)
-                .IsUnicode(false);
             entity.Property(e => e.FirstName)
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.LastName)
                 .HasMaxLength(255)
                 .IsUnicode(false);
-            entity.Property(e => e.PersonId).HasColumnName("PersonID");
         });
 
         OnModelCreatingPartial(modelBuilder);
